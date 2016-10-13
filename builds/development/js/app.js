@@ -5,10 +5,12 @@ var appControllers = angular.module("appControllers", []);
 myAngularData.config(["$routeProvider", function($routeProvider) {
   $routeProvider.
     when("/login", {
-      templateUrl: "views/login.html"
+      templateUrl: "views/login.html",
+      controller: "RegistrationController"
     })
     .when("/meetings", {
-        templateUrl: "views/meetings.html"
+        templateUrl: "views/meetings.html",
+        controller: "RegistrationController"
       })
     .when("/register", {
           templateUrl: "views/register.html"
