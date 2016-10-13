@@ -448,16 +448,15 @@ nav {
 
 .branding {
   float: left;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .branding a {
-  width: 80%;
-  font-size: 1.6em;
-  text-align: left;
+  font-size: 1.3em;
   color: #1B7998;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
+  font-weight: bold;
 }
 
 .branding a:hover {
