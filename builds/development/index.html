@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Boas Angular Data</title>
+  <!-- My css link -->
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,100,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+  <!-- Javascript link -->
+  <script type="text/javascript" src="js/lib/angular/angular.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular/angular-route.min.js"></script>
+  <script type="text/javascript" src="js/lib/angular/angular-animate.min.js"></script>
+
 </head>
+
 <body>
   <div class="page">
     <main class="cf">
-      <input type="text">
+      <h1>{{name}}</h1>
+      <input type="" name="name" value="" ng-model="name" placeholder="enter something">
     </main>
   </div>
 </body>
