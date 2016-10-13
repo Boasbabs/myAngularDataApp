@@ -1,5 +1,5 @@
-myAngularData.controller("RegistrationController", ["$scope", function($scope) {
+myAngularData.controller("RegistrationController", ["$scope", "$location", function($scope, $location) {
   $scope.login = function() {
-    alert($scope.user.email);
+    $location.path("/meetings");
   }// login submission is called here
 }]);// RegistrationController for registration
