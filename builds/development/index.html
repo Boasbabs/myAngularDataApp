@@ -12,8 +12,26 @@
   <script type="text/javascript" src="js/lib/angular/angular.min.js"></script>
   <script type="text/javascript" src="js/lib/angular/angular-route.min.js"></script>
   <script type="text/javascript" src="js/lib/angular/angular-animate.min.js"></script>
+  <!-- Firebase added -->
+
+  <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCVAIpfsqcLvK3YSdq5Pnf3PxEUl6lWQPw",
+      authDomain: "boasbabs-myangulardataapp.firebaseapp.com",
+      databaseURL: "https://boasbabs-myangulardataapp.firebaseio.com",
+      storageBucket: "boasbabs-myangulardataapp.appspot.com",
+      messagingSenderId: "157577539965"
+    };
+     firebase.initializeApp(config);
+  </script>
+
+  <!-- AngularFire -->
+  <script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
   <script type="text/javascript" src="js/controllers/registration.js"></script>
+  <script type="text/javascript" src="js/controllers/meetings.js"></script>
 
 </head>
 

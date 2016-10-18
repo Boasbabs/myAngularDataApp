@@ -1,4 +1,6 @@
-<h1>Your meetings</h1>
-<p>
-  View meetings below in site features.
-</p>
+<section class="card meetings cf">
+  <h2>Your Meetings </h2>
+  <div class="meeting" ng-repeat="meeting in meetings">
+    <p>{{meeting.name}}</p>
+  </div>
+</section>

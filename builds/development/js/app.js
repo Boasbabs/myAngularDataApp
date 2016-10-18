@@ -1,6 +1,6 @@
-var myAngularData = angular.module("myApp", ["ngRoute", "appControllers"]);
+var myAngularData = angular.module("myApp", ["ngRoute", "firebase", "appControllers"]);
 
-var appControllers = angular.module("appControllers", []);
+var appControllers = angular.module("appControllers", ["firebase"]);
 
 myAngularData.config(["$routeProvider", function($routeProvider) {
   $routeProvider.
@@ -8,13 +8,14 @@ myAngularData.config(["$routeProvider", function($routeProvider) {
       templateUrl: "views/login.html",
       controller: "RegistrationController"
     })
-    .when("/meetings", {
-        templateUrl: "views/meetings.html",
-        controller: "RegistrationController"
-      })
     .when("/register", {
-          templateUrl: "views/register.html"
+          templateUrl: "views/register.html",
+          controller: "RegistrationController"
         })
+    .when("/meetings", {
+      templateUrl: "views/meetings.html",
+      controller: "MeetingsController"
+    })
     .otherwise({
             redirectTo: "/login"
           });
