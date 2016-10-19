@@ -7,4 +7,13 @@ myAngularData.controller("MeetingsController", ["$scope", "$firebase", "$firebas
 
   $scope.meetings = $firebaseObject(rootRef); //The data gotten from the Firebase is passed into $scope.meetings
 
+  $scope.addMeeting = function() {
+    rootRef.push({
+      name: $scope.meetingname,
+      date: firebase.database.ServerValue.TIMESTAMP // this assigned date to the data not rootRef.update(firebase.database.ServerValue.TIMESTAMP)
+    }).then(function () {
+      $scope.meetingname = ""; // to clear the input field
+    });
+  }// add meetings to database
+
 }]); // MeetingsController
