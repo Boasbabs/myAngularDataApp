@@ -16,4 +16,8 @@ myAngularData.controller("MeetingsController", ["$scope", "$firebase", "$firebas
     });
   }// add meetings to database
 
+  $scope.deleteMeeting = function() {
+    $scope.meetings.remove();
+  }
+
 }]); // MeetingsController
